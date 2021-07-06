@@ -1,0 +1,9 @@
+#image-wrapper, #video-wrapper {
+    position: relative;
+}
+
+#imgOverlay, #webcamOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+}

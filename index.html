@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Face Detection</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="video-wrapper">
+        <video
+          id="video1"
+          height="300px"
+          width="300px"
+          autoplay
+          onloadedmetadata="detectWebcam(this)"
+        ></video>
+        <canvas id="webcamOverlay"></canvas>
+      </div>
+      <div id="image-wrapper">
+        <img src="img/face.jpg" />
+        <canvas id="imgOverlay"></canvas>
+      </div>
+      <div id="errorMsg"></div>
+    </div>
+
+    <script src="node_modules/face-api.js/dist/face-api.js"></script>
+    <script src="js/activateWebcam.js"></script>
+    <script src="js/detectFaces.js"></script>
+  </body>
+</html>
