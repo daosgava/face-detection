@@ -4,4 +4,4 @@
 
 npm install
 
-then open index.html in the browser
+Then open index.html in the browser
