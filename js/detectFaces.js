@@ -93,13 +93,11 @@ const detectWebcam = async () => {
 
 const run = async () => {
     await loadModels();
-
-    /* Image */
     const imgEl = document.querySelector('img');
     const canvas = document.getElementById('imgOverlay');
     canvas.width = imgEl.width;
     canvas.height = imgEl.height;
-    // detectFaces(imgEl, canvas);
+
     detectFacesWithLandmarks(imgEl, canvas);
 };
 
